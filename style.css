@@ -1,0 +1,52 @@
+h1{
+    font-family: Under;
+    font-size: 55px;
+    font-style: oblique;
+    color: blue;
+}
+
+@font-face {
+    font-family: Under;
+    src: url(./Font/Under\ Station.otf);
+}
+
+h2{
+    font-family: Monday;
+    font-size: 40px;
+    text-align: center;
+}
+@font-face {
+    font-family: Monday;
+    src: url(./Font/Monday\ Rain.otf);
+}
+
+h3{
+    font-family: Monday;
+    font-size: 30px;
+    text-align: center;
+}
+
+.my-lg-4{
+    text-align: center;
+    font-size: 20px;
+}
+
+.Quotes{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+p.a{
+    font-family: Script;
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+@font-face {
+    font-family: Script;
+    src: url(./Font/MoricaScript_PERSONAL_USE_ONLY.otf);
+}

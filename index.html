@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" > <!-- référence au fichier css (point 1.b)-->
+  </head>
+ 
+  <body>
+
+    <h1>All about K-dramas!</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+      <nav class="navbar navbar-expand-lg bg-light"> <!--Navbar ajouté (point 2)-->
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">KDramas</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#List">List</a></li>
+                  <li><a class="dropdown-item" href="#Quotes">Quotes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#Contact">Contact<a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    </br>
+    <h2>LAST K-DRAMAS WATCHED</h2>
+    </br>
+
+      <div class="container text-center"> <!--Pour avoir les 4 contenus j'ai utilisé le grid avec container, row et col. Je n'ai pas spécifié le nombre de colonnes qu'ils occuperont pour qu'ils puissent s'afficher côté à côté avec la même largeur.-->
+        <div class="row">
+          <div class="col-md"> 
+            <div class="card" style="width: 18rem;">
+              <img src="./images/Live-Kdrama.jpg" class="card-img-top" alt="Live">
+              <div class="card-body">
+                <p class="card-text"> Live tells the story of police officers - from the lowest field cadets and patrol officers, to their superiors including corporals, captains, and more. Each officer has their own story (Wikipedia).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/09c883691bdf4b0b9682dc082b849d1a.png" class="card-img-top" alt="The Classic">
+              <div class="card-body">
+                <p class="card-text">The film tells the parallel love stories of a mother and daughter. The story of the mother is told partially in flashbacks to the setting of South Korea under Park Chung-hee's military regime in 1968 (Wikipedia).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+              <img src="./images/chicago_typewriter.webp" class="card-img-top" alt="Chicago typewriter">
+              <div class="card-body">
+                <p class="card-text">The series depicts three resistance fighters who lived during the 1930s Japanese occupation of Korea, and are reincarnated into the present as a best-selling writer in a ghostwriter. It is a story of camaraderie, friendship, love and betrayal that lasts 80 years (Wikipedia).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--carousel (point 6)-->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/MV5BZWQyZTkwMTMtYTJiZS00MGNlLThhN2EtYzEzOGQzYjFiZGQxXkEyXkFqcGdeQXVyMTEzMjQ4NzEw._V1_.jpg" class="d-block w-100" alt="Crash landing on you">
+                  <blockquote class="blockquote"> <!--blockquote (point 9)-->
+                    <p>"Sometimes, the wrong train takes you to the right station"</p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/AAAABURdHFsGuoh29W3UmDd9P6ha714SwXLwVo-Yz9qCbHl__dd_P7F2pL-t8jdwgrJU8UIU2A1YBnMv_Qqk3EbjnhMBH_1OT48OH9K8.jpg" class="d-block w-100" alt="Youth of may">
+                  <blockquote class="blockquote">
+                    <p>"It is a picnic whenever I am with you"</p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/ALASAN-KAMU-HARUS-NONTON-THE-GOOD-BAD-MOTHER-DI-NETFLIX-1.jpeg" class="d-block w-100" alt="The good bad mother">
+                  <blockquote class="blockquote">
+                    <p>"People say to love as if it's your first time. I'd like you to love as if it's your last time"</p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/Kingdom_Poster.webp" class="d-block w-100" alt="Kingdom">
+                  <blockquote class="blockquote">
+                    <p>"The dead people came back to life as monsters"</p>
+                  </blockquote>
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/2218289.jpg" class="d-block w-100" alt="My name">
+                  <blockquote class="blockquote">
+                    <p>"You never learned how to say that you're in pain."</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </br>  
+
+    </br>
+    <h2 id="List">LIST</h2>
+    </br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6"> <!--Les deux contenus de la ligne sont d'une larguer prédéfinie de 6 pour des affichages de largeur 576px (sm) pour cela j'ai utilisé les "container, row et col" (point 4)-->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-primary">Name</li> <!--classe contextuelle (point 7)-->
+              <li class="list-group-item">I can hear your voice</li>
+              <li class="list-group-item">Healer</li>
+              <li class="list-group-item">Kill me, heal me</li>
+              <li class="list-group-item">Rain or shine</li>
+              <li class="list-group-item">Are you human?</li>
+              <li class="list-group-item">While you were sleeping</li>
+              <li class="list-group-item">Because this is my first life</li>
+              <li class="list-group-item">What's wrong with secretary Kim</li>
+              <li class="list-group-item">Angel's last mission:love</li>
+              <li class="list-group-item">Touch your heart</li>
+              <li class="list-group-item">The crowned clown</li>
+              <li class="list-group-item">...</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-primary">Year</li>
+              <li class="list-group-item">2013</li>
+              <li class="list-group-item">2014</li>
+              <li class="list-group-item">2015</li>
+              <li class="list-group-item">2017</li>
+              <li class="list-group-item">2017</li>
+              <li class="list-group-item">2017</li>
+              <li class="list-group-item">2018</li>
+              <li class="list-group-item">2018</li>
+              <li class="list-group-item">2019</li>
+              <li class="list-group-item">2019</li>
+              <li class="list-group-item">2020</li>
+              <li class="list-group-item">...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </br> 
+      <h2>QUOTES <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-right-quote" viewBox="0 0 16 16">
+          <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+          <path d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"/>
+          </svg>
+      </h2>
+    </br>  
+
+      <div id="Quotes" style="background-image: url(./images/029d116ba4199c40d8978d6dab1ee16b.jpg);">  
+        </br>
+        <p class="a">"Children have to play right now. Later is too late. It's too late after getting into university, getting a job, and getting married. Play with marbles, tag, Red Rover, and double dutch. Later is too late." (Extraordinary Attorney Woo).</p>
+        <p class="a">"There are still people who like you. You have to live for them." (All of Us Are Dead).</p>
+        <p class="a">"No matter how pathetic you feel, you must do what you can at the moment. If I am not willing to do anything, I might as well just die." (Alchemy of Souls).</p>
+        <p class="a">"There are some things that get results in a short amount of time, and other things where you risk the losses and stay in it for the long run. It's difficult to decide how good or bad something is just by how long it takes." (Business Proposal).</p>
+        <p class="a">"The choice is yours. Will you live your life running away or will you fight and get a new life?" (Big Mouth).</p>
+        <p class="a">"When people keep running without a break, they always trip over and explode." (Through The Darkness).</p>
+        <p class="a">...</p>
+      </div>  
+    </br>   
+
+    </br>
+      <h3>Contact</h3>
+  
+      <div class="my-lg-4"><!--L'effet de cette classe est d'ajouter un type de marge: "m - for classes that set margin", "y - for classes that set both *-top and *-bottom", "lg pour large devices" et "4 - (by default) for classes that set the margin or padding to $spacer * 1.5" (Point 10)-->
+        <p>H. Garcia</p> 
+        <p><a href="mailto:Simoneta.palacios@gmail.com">garcia.garcia@gmail.com</a></p>
+      </div>
+
+  </body>
+</html>
